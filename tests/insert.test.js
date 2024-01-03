@@ -34,7 +34,7 @@ describe('insertLessons', () => {
     await expect(insertLessons([1], 'History', [0, 2, 4], new Date(), 301)).rejects.toThrow('Превышен лимит в 300 уроков или период в 1 год.');
   });
 
-  //С этим тестом возникли трудности. Не знаю, как правильно его переписать
+  //С этим тестом возникли трудности. По какой-то причине при вызове функции insertLessons программа не получает данные после выполнения запроса
 
     //   it('should insert lessons based on lessonsCount', async () => {
     //     const client = { query: jest.fn(), release: jest.fn() };
